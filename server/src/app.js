@@ -7,8 +7,8 @@ app.get('/', function(req, res) {
 });
 
 var server = app.listen('3000', function() {
-	var host = server.address('http://localhost:').address;
-	var port = server.address('3000').port;
+	var host = server.address().address;
+	var port = server.address().port;
 
 	console.log('My App is listening on http://%s:%s', host, port);
 })

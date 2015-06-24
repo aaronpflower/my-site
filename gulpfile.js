@@ -3,16 +3,8 @@
 var gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	jshint = require('gulp-jshint'),
-	stylus = require('gulp-stylus');
-
-// create a default task and just log a message
-
-// gulp.task('default', function() {
-// 	return gutil.log('gulp is running!')
-// });
-
-// Define the deafault task and add the watch task
-gulp.task('deafault', ['watch']);
+	stylus = require('gulp-stylus'),
+	nodemon = require('gulp-nodemon');
 
 // Configure the gulp task
 gulp.task('jshint', function() {
@@ -31,3 +23,14 @@ gulp.task('css', function() {
 	.pipe(stylus())
 	.pipe(gulp.dest('client/css/lib'));
 });
+
+// Nodemon to start server
+gulp.task('default', function() {
+	nodemon({ script: 'server/src/app.js'
+			, ext: 'html js jade'
+			, ignore: ['ingnored.js']
+			, tasks: ['jshint'] })
+		.on('restart', function(){
+			console.log('restarted!')
+		})
+})
