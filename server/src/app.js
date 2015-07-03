@@ -6,6 +6,18 @@ app.get('/', function(req, res) {
 	res.render('index')
 });
 
+app.get('/author', function(req, res) {
+	res.render('author')
+});
+
+app.get('/copy-writer', function(req, res) {
+	res.render('copy-writer')
+});
+
+app.get('/portfolio', function(req, res) {
+	res.render('portfolio')
+});
+
 var server = app.listen('3000', function() {
 	var host = server.address().address;
 	var port = server.address().port;

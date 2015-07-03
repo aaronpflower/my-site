@@ -1,34 +1,4 @@
-doctype html
-html
-	head
-		title My Site
-		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
-		meta(http-equiv="content-type", content="text/html;charset=UTF-8")
-		link(rel="stylesheet", type="text/css", href="/client/css/lib/styles.css")
-		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript")
-		script(src="/client/js/src/client.js")
-		link(src="/client/img")
-
-	body
-		header 
-			div.header
-				div.header-inner
-					p.header-title Paul Flower
-					a.ham-menu.slideout-menu-toggle
-						svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24")
-							path(d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z")
-
-		div.slideout-menu
-			ul.slideout-menu-list
-				li.slideout-menu-item
-					a(href="#") Author
-				li.slideout-menu-item
-					a(href="#") Copy Writer
-				li.slideout-menu-item
-					a(href="#") Social Media
-				li.slideout-menu-item
-					a(href="#") Portfolio 
-
-		main
-			div.content
-				img(class="hero-img" src="client/img/sample.jpg")
+extends ./header.jade
+block content 
+	img(class="hero-img" src="client/img/hero.png")
+	p The novel about brain surgery that isn’t about brain surgery. Paul Flower’s novel, “The Redeeming Power of Brain Surgery,” is the suspense-filled tale of a wealthy Chicagoan, his evil mom, working class twin, and the secret they share. Paul grew up in West Michigan’s beach-resort country, where wealthy tourists mingle with made-for-reality-TV locals––the ideal backdrop for this saga, from Scribe Publishing. Available from scribe-publishing.com, amazon.com, barnesandnoble.com, through most bookstores, and as e-book on iTunes, Kindle, and NOOK.
