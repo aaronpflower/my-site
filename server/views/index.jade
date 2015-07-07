@@ -1,4 +1,23 @@
 extends ./header.jade
 block content 
 	img(class="hero-img" src="client/img/hero.png")
-	p The novel about brain surgery that isn’t about brain surgery. Paul Flower’s novel, “The Redeeming Power of Brain Surgery,” is the suspense-filled tale of a wealthy Chicagoan, his evil mom, working class twin, and the secret they share. Paul grew up in West Michigan’s beach-resort country, where wealthy tourists mingle with made-for-reality-TV locals––the ideal backdrop for this saga, from Scribe Publishing. Available from scribe-publishing.com, amazon.com, barnesandnoble.com, through most bookstores, and as e-book on iTunes, Kindle, and NOOK.
+	
+	div.bottom-border
+		
+	main.content
+		div.col-1-2
+			h1 About
+			p The novel about brain surgery that isn’t about brain surgery. Paul Flower’s novel, “The Redeeming Power of Brain Surgery,” is the suspense-filled tale of a wealthy Chicagoan, his evil mom, working class twin, and the secret they share. Paul grew up in West Michigan’s beach-resort country, where wealthy tourists mingle with made-for-reality-TV locals––the ideal backdrop for this saga, from Scribe Publishing. Available from scribe-publishing.com, amazon.com, barnesandnoble.com, through most bookstores, and as e-book on iTunes, Kindle, and NOOK.
+		div.col-1-2
+			h1 Contact By email
+			input.input(type="text", name="name", required, placeholder="FULL NAME")
+
+			input.input(type="email", name="email", required,placeholder="EMAIL")
+
+			input(type="text", placeholder="Start writing")
+
+			button(href="#") Submit
+
+		div
+			div.grid-row Portfolio
+				iframe(src="http://www.coroflot.com/paulflower")

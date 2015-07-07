@@ -14,8 +14,8 @@ app.get('/copy-writer', function(req, res) {
 	res.render('copy-writer')
 });
 
-app.get('/portfolio', function(req, res) {
-	res.render('portfolio')
+app.get('/about', function(req, res) {
+	res.render('about')
 });
 
 var server = app.listen('3000', function() {
