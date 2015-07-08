@@ -80,7 +80,7 @@ iframe {
   height: 60px;
   background: #fff;
 }
-.header-title {
+.nav-title {
   font-weight: 600px;
   font-size: 25px;
   top: 0px;
@@ -137,7 +137,7 @@ iframe {
 }
 @media screen and (max-width: 768px) {
   .sub-nav,
-  .header-quote,
+  .nav-quote,
   .social-links-svg {
     display: none;
   }
@@ -154,11 +154,13 @@ iframe {
     height: 150px;
     max-width: 1280px;
   }
-  .header-title {
+  .nav-title {
     font-size: 45px;
     position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-  .header-quote {
+  .nav-quote {
     text-align: center;
     font-size: 15px;
     color: rgba(84,51,65,0.8);
@@ -166,6 +168,9 @@ iframe {
     border-right-style: solid;
     border-right-color: #000;
     position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
   }
   .sub-nav {
     margin-right: auto;
@@ -185,6 +190,7 @@ iframe {
   .social-links {
     text-align: center;
     position: relative;
+    padding: 15px;
   }
   .social-links-svg {
     width: 40px;
@@ -268,7 +274,7 @@ iframe {
   border-bottom-color: #000;
   width: 100%;
   position: relative;
-  top: 50;
+  top: 90px;
 }
 .shadow {
   -webkit-box-shadow: 0 8px 6px -6px #000;
